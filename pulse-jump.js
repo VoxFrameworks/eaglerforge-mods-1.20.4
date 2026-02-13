@@ -8,7 +8,7 @@ ModAPI.addEventListener("key", (event) => {
             isOnGround: true
         }); // prevent fall damage
       
-  } 
+   
     ModAPI.updateComponent("player");
   }
 });
