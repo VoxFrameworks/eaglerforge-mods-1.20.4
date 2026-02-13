@@ -5,6 +5,7 @@ ModAPI.addEventListener("key", (event) => {
     ModAPI.player.motionY += 1;
   if (ModAPI.player.fallDistance > 2.0) {
       ModAPI.network.sendPacketPlayer({isOnGround: true}); // prevent fall damage
+       ModAPI.player.fallDistance = 0; 
   } 
     ModAPI.updateComponent("player");
   }
